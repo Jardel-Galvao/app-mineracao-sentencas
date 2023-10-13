@@ -1,6 +1,8 @@
 import nltk
 from nltk.stem import WordNetLemmatizer
 from libs.api_anki import invoke
+from libs.dict_api import get_word_definition
+
 import re
 
 nltk.download('wordnet')
@@ -38,11 +40,16 @@ def list_of_words_that_not_existis_anki():
     file_b = 'files/sentence_list.txt'
     words_set_a = read_file(file_a)
     words_set_b = read_file(file_b)
-    unique_words = words_set_a - words_set_b
+    unique_words = list(words_set_a - words_set_b)
 
     return unique_words
 
 sentences = list_of_sentences_anki()
 export_sentences_txt(sentences)
-words_to_study = list_of_words_that_not_existis_anki()
 
+words_to_study = list_of_words_that_not_existis_anki()
+for i in range(0, 10):
+    with open('files/new_words_definitions.txt', 'w') as file:
+        file.write(get_word_definition(words_to_study[i]))
+
+print('TERMINOU')
