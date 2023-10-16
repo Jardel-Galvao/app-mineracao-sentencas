@@ -5,8 +5,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 cookie_dict = {
+    "__Secure-1PAPISID" : os.environ.get('__Secure-1PAPISID', ''),
     "__Secure-1PSID": os.environ.get('__Secure-1PSID', ''),
-    # "__Secure-1PSIDTS": os.environ.get('__Secure-1PSIDTS', ''),
+    "__Secure-1PSIDCC": os.environ.get('__Secure-1PSIDCC', ''),
+    "__Secure-1PSIDTS": os.environ.get('__Secure-1PSIDTS', ''),
 }
 
 bard = BardCookies(cookie_dict=cookie_dict)

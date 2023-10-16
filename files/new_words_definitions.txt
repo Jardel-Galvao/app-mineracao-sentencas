@@ -1,0 +1,104 @@
+The requested information in HTML format:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hosiery, Delude, Snout, Cooperation, Complete, Duplicate, Inadmissible, Receptive, Application, Marching</title>
+</head>
+<body>
+
+<h2>Hosiery</h2>
+<ul>
+  <li>Definition: knit or woven coverings for the feet and legs designed to be worn inside shoes, particularly women's stockings and tights; also socks for men, women, and children.</li>
+  <li>Phonetic Transcription: /ˈhoʊʒəri/</li>
+  <li>Example Phrases:
+    <ul>
+      <li>She wore sheer black hosiery to the event.</li>
+      <li>He put on a pair of thick wool socks to keep his feet warm.</li>
+      <li>The store sells a wide variety of hosiery for men, women, and children.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Delude</h2>
+<ul>
+  <li>Definition: to lead someone to believe something that is not true.</li>
+  <li>Phonetic Transcription: /dɪˈluːd/</li>
+  <li>Example Phrases:
+    <ul>
+      <li>He was deluded into thinking that he was rich.</li>
+      <li>The politician deluded the voters with his false promises.</li>
+      <li>The cult leader deluded his followers into believing that he was a god.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Snout</h2>
+<ul>
+  <li>Definition: the long nose of an animal, such as a pig or a dog.</li>
+  <li>Phonetic Transcription: /snaʊt/</li>
+  <li>Example Phrases:
+    <ul>
+      <li>The pig sniffed the ground with its snout.</li>
+      <li>The dog wagged its tail and licked its snout.</li>
+      <li>The elephant used its snout to pick up leaves and branches.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Cooperation</h2>
+<ul>
+  <li>Definition: the act of working together with someone.</li>
+  <li>Phonetic Transcription: /koʊˌɒpəˈreɪʃən/</li>
+  <li>Example Phrases:
+    <ul>
+      <li>The police and the FBI are cooperating on the investigation.</li>
+      <li>The students cooperated on the group project.</li>
+      <li>The two countries are cooperating on a new trade agreement.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Complete</h2>
+<ul>
+  <li>Definition: finished or whole.</li>
+  <li>Phonetic Transcription: /kəmˈpliːt/</li>
+  <li>Example Phrases:
+    <ul>
+      <li>I have completed my homework.</li>
+      <li>The movie is complete and ready to be released.</li>
+      <li>The puzzle is complete, there are no missing pieces.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Duplicate</h2>
+<ul>
+  <li>Definition: an exact copy of something.</li>
+  <li>Phonetic Transcription: /ˈdjuːplɪkət/</li>
+  <li>Example Phrases:
+    <ul>
+      <li>Please make a duplicate key for me.</li>
+      <li>The police are looking for a duplicate of the crime scene photo.</li>
+      <li>The computer program can create duplicate files.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Inadmissible</h2>
+<ul>
+  <li>Definition: not acceptable or allowed.</li>
+  <li>Phonetic Transcription: /ɪnədˈmɪsəbl/</li>
+  <li>Example Phrases:
+    <ul>
+      <li>The judge ruled that the evidence was inadmissible.</li>
+      <li>The student's essay was inadmissible because it was plagiarized.</li>
+      <li>The athlete was banned from the competition for doping, which is an inadmissible offense.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Receptive</h2>
+<ul>
+  <li>Definition: willing to listen to and consider other people's ideas

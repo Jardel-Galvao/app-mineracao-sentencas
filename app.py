@@ -1,7 +1,7 @@
 import nltk
 from nltk.stem import WordNetLemmatizer
 from libs.api_anki import invoke
-from libs.dict_api import get_word_definition
+from libs.api_bard import bard_get_answer
 
 import re, json
 
@@ -47,9 +47,36 @@ def list_of_words_that_not_existis_anki():
 sentences = list_of_sentences_anki()
 export_sentences_txt(sentences)
 
-words_to_study = list_of_words_that_not_existis_anki()
-with open('files/new_words_definitions.json', 'w', encoding='utf-8') as file:
-    for i in range(0, 10):
-        json.dump(get_word_definition(words_to_study[i]), file, ensure_ascii=False, indent=4)
+words_to_study =list_of_words_that_not_existis_anki()[:10]
+
+prompt_bard = f'''
+    "I need the following information for the following words:
+
+    Definition to a beginer in english
+    Phonetic Transcription
+    Three short example phrases
+
+    For the following words:"
+
+    {words_to_study}
+
+    and give me the answer in the following order but in html file:
+
+    Ex: Current word is "fight"
+
+    Definition:
+    - To take part in a war or battle against an enemy
+
+    Phonetic Transcription:
+    - /faɪt/
+
+    Three short example phrases
+    - She helped him fight his drug addiction.
+    - He broke his nose in the fight.
+    - Now, we fight with guns.
+
+'''
+with open('files/new_words_definitions.txt', 'w', encoding='utf-8') as file:
+    file.write(bard_get_answer(prompt_bard))
 
 print('TERMINOU')
