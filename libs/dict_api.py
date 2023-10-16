@@ -8,7 +8,7 @@ def get_word_definition(word):
         
         definition = {
             'word' : json_response[0]['word'],
-            'phonetic' : json_response[0]['phonetic'],
+            'phonetic' : json_response[0].get('phonetic', ''),
             'definitions' : [definition['definition'] for definition in definitions],
             'examples' : [definition['example'] for definition in definitions if 'example' in definition],
         }

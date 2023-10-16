@@ -3,7 +3,7 @@ from nltk.stem import WordNetLemmatizer
 from libs.api_anki import invoke
 from libs.dict_api import get_word_definition
 
-import re
+import re, json
 
 nltk.download('wordnet')
 
@@ -48,8 +48,8 @@ sentences = list_of_sentences_anki()
 export_sentences_txt(sentences)
 
 words_to_study = list_of_words_that_not_existis_anki()
-for i in range(0, 10):
-    with open('files/new_words_definitions.txt', 'w') as file:
-        file.write(get_word_definition(words_to_study[i]))
+with open('files/new_words_definitions.json', 'w', encoding='utf-8') as file:
+    for i in range(0, 10):
+        json.dump(get_word_definition(words_to_study[i]), file, ensure_ascii=False, indent=4)
 
 print('TERMINOU')
