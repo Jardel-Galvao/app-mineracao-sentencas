@@ -2,8 +2,7 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 from libs.api_anki import invoke
 from libs.api_bard import bard_get_answer
-
-import re, json
+import re
 
 nltk.download('wordnet')
 
@@ -47,12 +46,12 @@ def list_of_words_that_not_existis_anki():
 sentences = list_of_sentences_anki()
 export_sentences_txt(sentences)
 
-words_to_study =list_of_words_that_not_existis_anki()[:10]
+words_to_study =list_of_words_that_not_existis_anki()[:15]
 
 prompt_bard = f'''
     "I need the following information for the following words:
 
-    Definition to a beginer in english
+    Definition to a beginer in english, please do a answer with a easy comprehension
     Phonetic Transcription
     Three short example phrases
 
@@ -76,7 +75,7 @@ prompt_bard = f'''
     - Now, we fight with guns.
 
 '''
-with open('files/new_words_definitions.txt', 'w', encoding='utf-8') as file:
+with open('files/new_words_definitions.html', 'w', encoding='utf-8') as file:
     file.write(bard_get_answer(prompt_bard))
 
 print('TERMINOU')
